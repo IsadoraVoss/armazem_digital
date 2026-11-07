@@ -25,3 +25,4 @@ catch (erro) {
     console.error('Falha ao iniciar:', erro.message);
     process.exit(1);
 }
+

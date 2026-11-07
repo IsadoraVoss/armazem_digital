@@ -7,3 +7,4 @@ if (!process.env.MONGODB_URI) {
     serverSelectionTimeoutMS: 5000  
 });  
  console.log('MongoDB conectado'); }
+ 

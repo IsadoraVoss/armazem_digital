@@ -1,0 +1,106 @@
+{
+  "info": {
+    "name": "armazem_digital",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /api/produtos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos"]
+        }
+      }
+    },
+    {
+      "name": "POST /api/produtos",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Caneta Azul\",\r\n  \"descricao\": \"Caneta esferográfica\",\r\n  \"preco\": 2.99,\r\n  \"quantidade\": 100,\r\n  \"ativo\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/produtos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos"]
+        }
+      }
+    },
+    {
+      "name": "GET /api/produtos/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/6aef37cedc73d80469e3f3d7",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "6aef37cedc73d80469e3f3d7"]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/produtos/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"preco\": 3.50,\r\n  \"quantidade\": 80\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/6aef37cedc73d80469e3f3d7",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "6aef37cedc73d80469e3f3d7"]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/produtos/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/produtos/6aef37cedc73d80469e3f3d7",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "produtos", "6aef37cedc73d80469e3f3d7"]
+        }
+      }
+    }
+  ]
+}
